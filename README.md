@@ -15,7 +15,10 @@ conda create -n simvla python=3.10 -y
 conda activate simvla
 
 pip install torch torchvision --index-url https://download.pytorch.org/whl/cu124
-pip install -r requirements.txt
+pip install transformers>=4.57.0
+pip install peft accelerate fastapi tensorboard uvicorn json_numpy safetensors scipy einops timm mmengine pyarrow h5py mediapy num2words av wandb websockets msgpack_numpy
+pip install flash-attn==2.5.6 --no-build-isolation
+pip install tensorflow tensorflow-datasets
 ```
 
 > Important: Use `transformers>=4.57.0`.
