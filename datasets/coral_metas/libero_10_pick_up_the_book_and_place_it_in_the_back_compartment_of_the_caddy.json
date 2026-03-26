@@ -1,0 +1,25 @@
+{
+  "dataset_name": "libero_hdf5",
+  "data_dir": "./datasets/metas",
+  "datalist": [
+    {
+      "path": "./datasets/metas/libero_10/STUDY_SCENE1_pick_up_the_book_and_place_it_in_the_back_compartment_of_the_caddy_demo.hdf5",
+      "task": "pick up the book and place it in the back compartment of the caddy",
+      "subset": "libero_10",
+      "num_demos": 50
+    }
+  ],
+  "num_files": 1,
+  "num_episodes": 50,
+  "subsets": [
+    "libero_10"
+  ],
+  "observation_key": [
+    "obs/agentview_rgb",
+    "obs/eye_in_hand_rgb"
+  ],
+  "action_key": "actions",
+  "state_dim": 8,
+  "action_dim": 7,
+  "fps": 10
+}

@@ -1,0 +1,25 @@
+{
+  "dataset_name": "libero_hdf5",
+  "data_dir": "./datasets/metas",
+  "datalist": [
+    {
+      "path": "./datasets/metas/libero_10/KITCHEN_SCENE6_put_the_yellow_and_white_mug_in_the_microwave_and_close_it_demo.hdf5",
+      "task": "put the yellow and white mug in the microwave and close it",
+      "subset": "libero_10",
+      "num_demos": 50
+    }
+  ],
+  "num_files": 1,
+  "num_episodes": 50,
+  "subsets": [
+    "libero_10"
+  ],
+  "observation_key": [
+    "obs/agentview_rgb",
+    "obs/eye_in_hand_rgb"
+  ],
+  "action_key": "actions",
+  "state_dim": 8,
+  "action_dim": 7,
+  "fps": 10
+}

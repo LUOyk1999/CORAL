@@ -1,0 +1,27 @@
+# Core
+transformers>=4.57.0
+torch>=2.0.0
+accelerate
+safetensors
+einops
+timm
+scipy
+h5py
+num2words
+flash-attn>=2.5.0
+
+# LoRA / PEFT
+peft>=0.11.0
+
+# Inference server
+websockets
+msgpack
+msgpack-numpy
+
+# Logging & monitoring
+tensorboard
+wandb
+
+# Evaluation
+imageio
+tqdm

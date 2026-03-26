@@ -1,0 +1,25 @@
+{
+  "dataset_name": "libero_hdf5",
+  "data_dir": "./datasets/metas",
+  "datalist": [
+    {
+      "path": "./datasets/metas/libero_10/KITCHEN_SCENE3_turn_on_the_stove_and_put_the_moka_pot_on_it_demo.hdf5",
+      "task": "turn on the stove and put the moka pot on it",
+      "subset": "libero_10",
+      "num_demos": 50
+    }
+  ],
+  "num_files": 1,
+  "num_episodes": 50,
+  "subsets": [
+    "libero_10"
+  ],
+  "observation_key": [
+    "obs/agentview_rgb",
+    "obs/eye_in_hand_rgb"
+  ],
+  "action_key": "actions",
+  "state_dim": 8,
+  "action_dim": 7,
+  "fps": 10
+}

@@ -1,0 +1,25 @@
+{
+  "dataset_name": "libero_hdf5",
+  "data_dir": "./datasets/metas",
+  "datalist": [
+    {
+      "path": "./datasets/metas/libero_goal/put_the_bowl_on_top_of_the_cabinet_demo.hdf5",
+      "task": "put the bowl on top of the cabinet",
+      "subset": "libero_goal",
+      "num_demos": 50
+    }
+  ],
+  "num_files": 1,
+  "num_episodes": 50,
+  "subsets": [
+    "libero_goal"
+  ],
+  "observation_key": [
+    "obs/agentview_rgb",
+    "obs/eye_in_hand_rgb"
+  ],
+  "action_key": "actions",
+  "state_dim": 8,
+  "action_dim": 7,
+  "fps": 10
+}
