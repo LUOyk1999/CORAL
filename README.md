@@ -6,7 +6,7 @@
 
 A backbone- and embodiment-agnostic framework that resolves multi-task interference in VLA deployment through strict parameter isolation via LoRA experts.
 
-<img width="960" height="702" alt="image" src="https://github.com/user-attachments/assets/d0466081-119b-458c-837f-49662b596bc5" />
+<img width="800" height="400" alt="image" src="https://github.com/user-attachments/assets/35098236-33ec-4f3e-9c66-74731975c685" />
 
 ## Installation
 
