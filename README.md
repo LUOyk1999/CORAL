@@ -33,9 +33,12 @@ Download [LIBERO](https://github.com/Lifelong-Robot-Learning/LIBERO) dataset, an
 
 Train 40 per-task LoRA experts (one per LIBERO evaluation task). The [SimVLA](https://huggingface.co/YuankaiLuo/SimVLA-LIBERO) base model is automatically downloaded from HuggingFace.
 
-**Lora A** (For Libero 10, lr=5e-5, 50 steps):
 ```bash
 CUDA_VISIBLE_DEVICES=0,1,2,3 SUITES="libero_10" bash train_coral_libero_all_r16.sh
+```
+or
+```bash
+CUDA_VISIBLE_DEVICES=0,1,2,3 bash train_coral_libero_all_r16.sh
 ```
 
 ### 3. Evaluation
