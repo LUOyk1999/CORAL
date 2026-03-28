@@ -108,16 +108,16 @@ echo ""
 # =============================================
 # 2. libero_goal  (LoRA: coral_libero_r16)
 # =============================================
-echo "[2/4] libero_goal (LoRA: coral_libero_r16)"
+echo "[2/4] libero_goal (base SimVLA)"
 SERVER_LOG="${OUTPUT_DIR}/server_goal.log"
 CUDA_VISIBLE_DEVICES=$SERVER_GPU \
 bash -c "
     source '${CONDA_BASE}/etc/profile.d/conda.sh'
     conda activate '${SERVER_CONDA}'
     export PYTHONPATH='${PROJECT_ROOT}:\${PYTHONPATH}'
-    python -u '${PROJECT_ROOT}/serve_smolvlm_coral.py' \
-        --lora-dir '${PROJECT_ROOT}/lora_adapters/coral_libero_r16' \
-        --norm-stats '${NORM_STATS}' \
+    python -u '${SCRIPT_DIR}/serve_smolvlm_libero.py' \
+        --checkpoint YuankaiLuo/SimVLA-LIBERO \
+        --norm_stats '${NORM_STATS}' \
         --port ${PORT}
 " > "$SERVER_LOG" 2>&1 &
 SERVER_PID=$!
